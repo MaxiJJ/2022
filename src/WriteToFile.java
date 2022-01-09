@@ -7,6 +7,9 @@ public class WriteToFile {
         File file = new File("test");
         PrintWriter pw = new PrintWriter(file);
 
+        pw.println("first row");
+        pw.println("second row");
 
+        pw.close();
     }
 }
