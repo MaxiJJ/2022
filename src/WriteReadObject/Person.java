@@ -3,7 +3,7 @@ package WriteReadObject;
 import java.io.Serializable;
 
 public class Person implements Serializable {
-    private int id;
+    private int id;  //transient - чтобы избежать серриализации поля
     private String name;
 
     public Person(int id, String name) {
