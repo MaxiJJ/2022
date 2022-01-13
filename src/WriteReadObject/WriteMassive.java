@@ -15,11 +15,9 @@ public class WriteMassive {
             FileOutputStream fos = new FileOutputStream("test.bin");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-            oos.writeInt(people.length);
+            oos.writeObject(people);
 
-            for (Person person : people) {
-                oos.writeObject(person);
-            }
+            fos.close();
 
         } catch (IOException e) {
             e.printStackTrace();
